@@ -29,9 +29,13 @@ body {
   width: 100%;
   border: 1px solid #e1e7ed;
   border-radius: 4px;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
   font-family: inherit;
   font-weight: inherit;
+  outline: none;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  box-shadow: none;
 }
 
 .search__input::placeholder {
@@ -49,7 +53,6 @@ body {
   height: 70px;
 
   line-height: 100%;
-  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
 }
 
 .search--small .search__input {
@@ -61,6 +64,8 @@ body {
 
   padding-left: 33px;
   height: 42px;
+
+  line-height: 100%;
 }
 
 .search__input:hover {
